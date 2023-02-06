@@ -1,74 +1,50 @@
-.personalInfo{
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.accountInfo{
-    display: flex;
-}
-
-.contactInfo{
-    display: flex;
-}
-.labelset1{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 50px;
-}
-.inputset1{
-    display: flex;
-    flex-direction: column;
-}
-
-.labelset2{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 50px;
-}
-.inputset2{
-    display: flex;
-    flex-direction: column;
-}
-
-.labelset3{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 50px;
-}
-.inputset3{
-    display: flex;
-    flex-direction: column;
-}
-
-input{
-    margin: 10px;
-    width: 200px;
-}
-label{
-    margin: 10px;
-}
-select{
-    margin:10px ;
-    
-}
-.year{
-    width: 60px;
-}
-#gen{
-    width: 200px;
-}
-#seq{
-    width: 200px;
-}
-
 
 .main{
+    width:500px;
     display: block;
-    margin: auto;
-    width: 500px;
-    background-color: rgb(243, 243, 243);
-    border: 2px solid black;
-    padding: 10px;
+    margin: 50px auto;
+    border: 2px solid gray;
+    background-color: aliceblue;
+}
+
+h1{
+    font-size: 20px;
+    margin: 5px;
+}
+
+label{
+    float: left;
+    width: 50%;
+}
+input,select{
+    float: right;
+    width: 50%;
+}
+#phone{
+    width: 100px;
+    float: left;
+}
+#type{
+    width: 100px;
+    float: right;
+}
+#zip{
+    width: 100px;
+    float: left;
+}
+#optinal{
+    width: 100px;
+    float: right;
 }
 .btn{
-    width: 100px;
+    /* width: 85px; */
+    width: 10%;
+    display: block;
+    float: none;
+    margin: 5px;
 }
