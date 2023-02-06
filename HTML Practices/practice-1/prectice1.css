@@ -1,0 +1,28 @@
+
+.imgArea {
+    display: flex;
+    padding: 5px;
+    margin-left: 25%;
+    text-align: center;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+  .textArea {
+    margin-left: 29%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .con1 {
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+  .text {
+    background: aquamarine;
+    color: black;
+    padding: 5px;
+  }

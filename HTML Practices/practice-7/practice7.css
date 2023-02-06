@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.yourAddress{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    margin: 50px auto 20px auto;
+}
+
+.additionalDetails{
+    display: block;
+    width: 1000px;
+    margin: 0px auto 20px auto;
+}
+
+.interest{
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+fieldset{
+    padding: 5px;
+    display: flex;
+}
+legend{
+    padding: 5px;
+}
+#imglabel,#favCarlabel{
+    margin-top: 37px;
+}
+label,input,textarea,select{
+    padding: 5px;
+    margin: 5px;
+}
+
+.labelset{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputset{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.inputset2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 148px;
+}
+.inputset3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}

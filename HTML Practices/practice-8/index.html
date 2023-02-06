@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic - 8</title>
+    <link rel="stylesheet" href="/practice8.css">
+</head>
+<body>
+    <div class="main">
+        <h3>Personal Information</h3>
+        <div class="personalInfo">
+            <div class="labelset1">
+                <label for="fName">First Name</label>
+                <label for="lName">Last Name</label>
+                <label for="dob">Date of Birth</label>
+                <label for="gen">Gender</label>
+            </div>
+            <div class="inputset1">
+                <input type="text" for="fName" required>
+                <input type="text" name="lName" required>
+                <div class="dob">
+                    <select name="month" id="" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="day" id="" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <input type="number" max="2023" min="1990" class="year" required>
+                </div>
+                <select name="gen" id="gen">
+                    <option value="default">Choose a Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+
+        <h3>Account Information</h3>
+        <div class="accountInfo">
+            <div class="labelset2">
+                <label for="email">Email</label>
+                <label for="re_email">Re-type Email</label>
+                <label for="password">Password</label>
+                <label for="repassword">Re-type Password</label>
+                <label for="securityQue">Security Question</label>
+                <label for="securityAns">Security Answer</label>
+            </div>
+            <div class="inputset2">
+                <input type="email" name="email" required>
+                <input type="email" name="re_email" required>
+                <input type="password" name="password" required>
+                <input type="password" name="repassword" required>
+                <select name="securityQue" id="seq">
+                    <option value="defsult">Choose a security question</option>
+                    <option value="1">Lorem ipsum dolor sit.</option>
+                    <option value="2">Lorem ipsum dolor sit amet.</option>
+                    <option value="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</option>
+                </select>
+                <input type="text" name="securityAns">
+
+            </div>
+        </div>
+
+        <h3>Contact Information</h3>
+        <div class="contactInfo">
+            <div class="labelset3">
+                <label for="add">Address:</label>
+                <label for="city">City:</label>
+                <label for="state">State</label>
+                <label for="zip">Zip code</label>
+                <label for="phoneNum">Phone Number</label>
+            </div>
+            <div class="inputset3">
+                <input type="text" name="add">
+                <input type="text" name="city">
+                <select name="state" id="">
+                    <option value="default">Choose a State</option>
+                    <option value="1">Gujrat</option>
+                    <option value="2">Rajasthan</option>
+                    <option value="3">Punjab</option>
+                    <option value="4">Delhi</option>
+                </select>
+                <input type="text" name="zip">
+                <input type="tel" name="phoneNum" id="" required>
+                <!-- <select name="option" id="">
+                    <option value="1">mobile</option>
+                    <option value="2">laneline</option>
+                </select> -->
+            </div>
+        </div>
+        <input type="submit" value="Submit" class="btn">
+        <input type="reset" value="Reset" class="btn">
+    </div>
+</body>
+</html>

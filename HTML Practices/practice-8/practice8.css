@@ -1,0 +1,74 @@
+.personalInfo{
+    display: flex;
+}
+
+.accountInfo{
+    display: flex;
+}
+
+.contactInfo{
+    display: flex;
+}
+.labelset1{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+.inputset1{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelset2{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+.inputset2{
+    display: flex;
+    flex-direction: column;
+}
+
+.labelset3{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+.inputset3{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px;
+    width: 200px;
+}
+label{
+    margin: 10px;
+}
+select{
+    margin:10px ;
+    
+}
+.year{
+    width: 60px;
+}
+#gen{
+    width: 200px;
+}
+#seq{
+    width: 200px;
+}
+
+
+.main{
+    display: block;
+    margin: auto;
+    width: 500px;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    padding: 10px;
+}
+.btn{
+    width: 100px;
+}

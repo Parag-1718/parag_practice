@@ -1,0 +1,40 @@
+.bg {
+  background-image: url("/bg1.jpg");
+  /* display: block; */
+  width: 400px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.main {
+  margin-left: 550px;
+}
+
+h1 {
+  margin: 30px;
+}
+
+.formpart {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 75px;
+  width: 250px;
+}
+input {
+  margin-bottom: 15px;
+  height: 30px;
+  text-align: start;
+}
+
+.btn {
+  background: #7279de;
+  color: white;
+  width: 120px;
+  border-radius: 31px;
+  border: none;
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+}

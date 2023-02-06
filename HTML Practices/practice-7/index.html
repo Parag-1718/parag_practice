@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice - 7</title>
+    <link rel="stylesheet" href="/practice7.css">
+</head>
+
+<body>
+
+    <form action="#" target="_blank">
+
+        <div class="yourAddress">
+            <fieldset>
+                <legend>Your address</legend>
+        
+                <div class="labelset">
+                    <label for="fName">First Name</label>
+                    <label for="lName">Last Name</label>
+                    <label for="street">Street</label>
+                    <label for="city">City</label>
+                </div>
+                <div class="inputset">
+                    <input type="text" name="fName" id="fName" />
+                    <input type="text" name="lName" id="lName" />
+                    <input type="text" name="street" id="street" />
+                    <input type="text" name="city" id="city" />
+                </div>
+
+
+
+            </fieldset>
+        </div>
+
+        <div class="additionalDetails">
+            <fieldset>
+                <legend>additional details</legend>
+
+                <div class="labelset">
+                    <label for="biography">Biography</label>
+                    <label for="img" id="imglabel">Image</label>
+                    <label for="ageGroup">Age grouop</label>
+                </div>
+                <div class="inputset2">
+                    <textarea name="biography" id="biography" cols="20" rows="2"></textarea>
+                    <input type="file" name="img" id="img" placeholder="choose file" />
+                    <input type="number" name="ageGroup" id="ageGroup" placeholder="0 to 9 Years" min="0" max="9" />
+                </div>
+
+
+
+            </fieldset>
+        </div>
+
+        <div class="interest">
+            <fieldset>
+                <legend>Interest</legend>
+
+                <div class="labelset">
+                    <label for="hobby">Hobbies</label>
+                    <label for="favCar" id="favCarlabel">Favourite Car?</label>
+                    <label for="favPubTransport">Favourite public transport?</label>
+                </div>
+                <div class="inputset3">
+                    <textarea name="hobby" id="" cols="15" rows="2" placeholder="Playig soccer"></textarea>
+                    <select name="favCar" id="favCar">
+                        <option value="volvo">VOLVO</option>
+                        <option value="bmw">BMW</option>
+                        <option value="honda">HONDA</option>
+                        <option value="ford">FORD</option>
+                        <option value="mercedes">MERCEDES</option>
+                    </select>
+                    <textarea name="favPubTransport" id="favPubTransport" cols="20" rows="2"></textarea>
+                </div>
+
+               
+
+            </fieldset>
+        </div>
+
+    </form>
+</body>
+
+</html>
