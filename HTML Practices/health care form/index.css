@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.blue{
+    color: rgb(17, 90, 123);
+}
+.border{
+    border: 2px solid rgb(17, 90, 123);
+}
+
+#hidden1{
+  display: none;
+}
+#hidden2{
+    display: none;
+}

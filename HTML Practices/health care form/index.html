@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health care insurance form</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form action="/" id="form1"></form>
+        <section>
+            <p>information</p>
+            <h1 class="blue">health care insurances <sup>+</sup></h1>
+            <p>complete all answer in capital latters</p>
+            <div class="div-1 border" >
+                <h2 class="blue">eployee statement</h2>
+                <label for="gContactNumber">group contract number</label>
+                <input type="text" name="gContactNumberd">
+                <label for="certificateNum">cerficate number</label>
+                <input type="text" name="certificateNum"><br>
+                <label for="ename">employee last name and given name</label>
+                <input type="text" name="ename">
+                <label for="Dob">date of birth</label>
+                <input type="date" name="Dob"><br>
+                <label for="add">employee address</label>
+                <input type="text" name="add"><br>
+                <p class="blue">would you like your claims and payment deposited in your account?</p>
+                <input type="checkbox" name="yes-1">
+                <label for="yes-1">yes </label><span>i have included a valid cheque.</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quidem id ullam dolor unde doloribus
+                    consectetur esse? Consequuntur eum laborum libero eos.</p>
+            </div>
+        </section>
+        <section>
+            <div class="div-2 border">
+                <h2 class="blue">cordination of benifites</h2>
+                <p>1.does you are spouse and/or childeren have covrage on any other medical plan or contract?</p>
+                <input type="radio" name="radiobutton1" id="planYes">
+                <label for="planYes">yes</label>
+                <input type="radio" name="radiobutton1" id="planNo" checked>
+                <label for="planNo">no</label>
+
+                <div id="hidden1">
+                    <p style="display: inline;">if yes, spouse date of birth?</p><input type="date" name="sDob" id="sDob"><br>
+                    <p style="display: inline;">insurance company. policy number and certificate number</p><input type="text" name="p&cnumber" id=""><br>
+                </div>
+
+                <p>2.is any expance the result of an accident?</p>
+                <input type="radio" name="checkbox4" id="yes-3">
+                <label for="yes-3">yes</label>
+                <input type="radio" name="checkbox5" id="no-3">
+                <label for="no-3">no</label>
+
+                <div class="hidden2">
+                    <p style="display: inline;">if yes, date of accident</p><input type="date" name="aDob" id="aDob"><br>
+                    <p style="display: inline;">location of accident</p>
+                    <input type="checkbox" name="work" id="work">
+                    <label for="work">work</label>
+                    <input type="checkbox" name="home" id="home">
+                    <label for="home">home</label>
+                    <input type="checkbox" name="other" id="other">
+                    <label for="other">other</label><br>
+                    <p style="display: inline;">explain how the accident occures</p><input type="text" name="aoccurence" id="aoccurence"><br>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="blue">drugs, vision care, peramedical service <br>
+            and other patient information </h2>
+
+            <table border="1" cellspacing="0" cellpadding="5px">
+                <thead>
+                    <tr>
+                        <th>patient name</th>
+                        <th>date of birth</th>
+                        <th>relationship to plan member</th>
+                        <th>total change</th>
+                    </tr>
+                </thead>
+                <!-- <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody> -->
+            </table>
+        </section>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
