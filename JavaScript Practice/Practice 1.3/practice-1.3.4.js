@@ -1,4 +1,5 @@
 let arr = [12,16,12,18,9,7,17,18]
+// let arr = ["virat","ram","rohit","MD_siraj","S_gill",'rohit']
 console.log(arr);
 
 function newFun(arr) {
