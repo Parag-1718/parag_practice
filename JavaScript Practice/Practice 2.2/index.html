@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <script src="./Practice 2.2 - 2.js"></script>
+    <style>
+        *{ margin: 0; padding: 0; box-sizing: border-box;}
+        main{ display: block; width: 45%; margin: 50px auto; background-color: #ddddf6;} 
+        input#age {width: 155px; margin-bottom: 5px;}
+        input#Height {width: 155px; margin-bottom: 5px;}
+        input#Weight {width: 155px; margin-bottom: 5px;}
+        form{margin: 15px;}
+        #btn{margin-bottom: 10px;margin-left: 30px;padding: 2px;width: 80px;background-color: #cbb6b6;border: none;border-radius: 2px;color: #4e3b3b;}
+    </style>
+</head>
+<body>
+    <main>
+         <h1>BMI calculator</h1> 
+         <hr>
+         <form action="" name="myform">
+             <label for="age">Age (1 year or above) *</label><br>
+             <input type="number" for="age" id="age" placeholder="Enter age in years" max="120" min="1" value=""><br>
+             <label for="Height">Height *</label><br>
+             <input type="number" name="Height" id="Height" placeholder="Enter Height in meters" min="0" max="2.5" value=""><br>
+             <label for="Weight">Weight *</label><br>
+             <input type="number" name="Weight" id="Weight" placeholder="Enter Weight in kg" min="1" max="300" value=""><br><br>
+             <button id="btn" onclick="Bmi()" type="button">Calculate</button><br><br><br>
+         </form>
+         <p id="mc"></p>
+    </main>
+</body>
+</html>

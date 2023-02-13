@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Trochut', cursive;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 25px;
+    width: 70px;
+    margin: 2px 1px;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-family: 'Trochut', cursive;
+
+}
+input{
+    margin: 5px 0px;
+    font-size: 35px;
+    padding: 2px;
+    width: 215px;
+    border: 2px solid cornflowerblue;
+    border-radius: 2px;
+    font-family: 'Trochut', cursive;
+
+}
+
+button#clear {
+    width: 144px;
+}
+
+button#dot {
+    width: 120px;
+}
