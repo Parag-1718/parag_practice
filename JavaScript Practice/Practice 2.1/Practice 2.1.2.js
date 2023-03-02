@@ -1,13 +1,17 @@
-let Array = [2,4,4,1,0,3];
-let number = 0 
+// 2. Write a JavaScript function that returns array elements larger
+// than a number, Array input should be dynamic
 
-let largeElement = (a,n)=>{
-    let arr=[];
-    for(i=0; i<a.length; i++){
-        if(a[i]>n){
-            arr.push(a[i]);
-        }
-    }return arr;
-}
+let Array = [2, 4, 4, 1, 0, 3];
+let number = 0;
 
-console.log(largeElement(Array,number));
+let largeElement = (a, n) => {
+  let arr = [];
+  for (i = 0; i < a.length; i++) {
+    if (a[i] > n) {
+      arr.push(a[i]);
+    }
+  }
+  return arr;
+};
+
+console.log(largeElement(Array, number));

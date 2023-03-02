@@ -1,4 +1,5 @@
 let async1 = async () => {
+
   let one = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(console.log("output from one"));
@@ -14,7 +15,7 @@ let async1 = async () => {
   let three = new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(console.log("output from three"));
-    }, 15000);
+    }, 20000);
   });
 
   let oneawa = await one;

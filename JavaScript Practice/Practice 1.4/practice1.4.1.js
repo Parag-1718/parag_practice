@@ -14,4 +14,5 @@ for(i=0; i<input.length; i++){
     }
 }
 console.log(max);
+2
 

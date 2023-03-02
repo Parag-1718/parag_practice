@@ -1,0 +1,15 @@
+.high {
+    background-color: red;
+    color:black;
+    margin: 10px;
+}
+.medium {
+    background-color: yellow;
+    color:black;
+    margin: 10px;
+}
+.low {
+    background-color: green;
+    color:black;
+    margin: 10px;
+}
