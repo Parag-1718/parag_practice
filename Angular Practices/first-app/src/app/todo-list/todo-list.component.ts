@@ -3,23 +3,37 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-todo-list',
   templateUrl: './todo-list.component.html',
-  styleUrls: ['./todo-list.component.css']
+  styleUrls: ['./todo-list.component.css'],
 })
 export class TodoListComponent {
+  task: any = '';
+  selectOption: string[] = ['high', 'medium', 'low'];
 
-  task:string = ''
-  taskarr:any[] = [[],[],[]]
-  getTask(v:string,v2:any){
-    // this.taskarr.push({name:v,pri:v2})
-    if(v2=="high"){
-      this.taskarr[0].splice(this.taskarr[0].length,0,{name:v,pri:v2})
+  taskarr: any[] = [];
+
+  getTask(v: string, v2: string) {
+    const newTask = { name: v, pri: v2 };
+
+    if (v) {
+      if (v2 == 'high') 
+      {
+        this.taskarr.unshift(newTask);
+      } 
+      else if (v2 == 'low') 
+      {
+        this.taskarr.push(newTask);
+      } 
+      else 
+      { const lastIndex = this.taskarr.reduce((lastIndex, task, index) => {
+          if (task.pri === 'high') {
+            return index;
+          }
+          return lastIndex;
+        }, -1);
+        this.taskarr.splice(lastIndex + 1, 0, newTask);
+        console.log(lastIndex);
+      }
+      console.warn(this.taskarr);
     }
-    else if(v2=='low'){
-      this.taskarr[2].splice(this.taskarr[1].length,0,{name:v,pri:v2})
-    }else{
-      this.taskarr[1].splice(this.taskarr[2].length,0,{name:v,pri:v2})
-    }
-    console.warn(this.taskarr);
   }
- 
 }

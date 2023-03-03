@@ -8,14 +8,12 @@
 
     <label for="priority-1">Priority:</label>
     <select id="priority-1" name="priority-1" #sel>
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
+        <option *ngFor="let item of selectOption" [value]="item">{{item}}</option>
     </select>
 
     <button (click)="getTask(todo.value,sel.value)">ADD</button>
     <br>
     <ul *ngFor="let item of taskarr" >
-        <li *ngFor="let x of item" [class]="x.pri">{{x.name}}</li>
+        <li  [class]="item.pri">{{item.name}}</li>
     </ul>
 </div>
