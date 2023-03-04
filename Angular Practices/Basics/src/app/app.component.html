@@ -1,0 +1,22 @@
+<!-- 1.property binding : using [] brackets -->
+<!-- 2.event binding : using () brackets -->
+
+<ng-template [ngIf]="changeBodyColor">
+    <p>button is black.</p>
+</ng-template>
+
+<button (click)="changeBodyColor = !changeBodyColor"
+[ngClass]="{ body:changeBodyColor }"
+[ngStyle]=" {'font-size.px': fontSize} ">change</button>
+<p *ngIf="!changeBodyColor">button is white.</p>
+<hr>
+
+<input (keyup)="changeImageUrl($event)" [value]="imageUral">
+<br>
+<app-post *ngFor="let image of images;let i = index" [postImg]="image" (imgSelected)="imgLog($event)">
+    <h5>{{i}}-caption</h5>
+</app-post>
+<br>
+<p>{{cuurentDate | date:'MMMM dd'}}</p>
+<p>{{cost | currency:'INR'}}</p>
+<p>{{temprature | number:'3.2-3'}}</p>
