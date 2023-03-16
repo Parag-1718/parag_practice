@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   p:any = 100000; 
-  n!:number;
-  r:number = 7.2;
+  n:number = 120;
+  r:number = 8;
 
   resultAmount:any;
   PayableAmount:any;
@@ -31,22 +31,36 @@ export class HomeComponent {
     this.tableData()
   }
 
-  tableObj:any= [
-  ]
+
 
   tableData(){
-    let i;
-   
-    for(i=0;i<this.n;i++){
-      let endbelence;
-      endbelence = this.p - this.resultAmount
-       let arr;
-       let int = this.IntersetAmount/61;
-       let pri = this.resultAmount - int
-       arr = {index:i+1, bb: this.p ,emi: this.resultAmount,pri:pri, interest:int, end:endbelence }
-       this.tableObj.push(arr)
-    }
-    console.log(this.tableObj);
+    let tableObj: any[] = [];
+      let tableBeggingBalance = this.p;
+      tableBeggingBalance.toFixed(2);
+      let tableEMI = this.resultAmount;
+      tableEMI.toFixed(2);
+      let interestAmount = (this.r / 1200) * tableBeggingBalance;
+      interestAmount.toFixed(2);
+      let tablePrinciple = tableEMI - interestAmount;
+      tablePrinciple.toFixed(2);
+      let tableEndingBalance = tableBeggingBalance - tablePrinciple;
+      tableEndingBalance.toFixed(2);
+      for (let i = 0; i < this.n; i++) {
+        let obj = {
+          index: i+1,
+          one: tableBeggingBalance.toFixed(2),
+          two: tableEMI.toFixed(2),
+          three: tablePrinciple.toFixed(2),
+          four: interestAmount.toFixed(2),
+          five: tableEndingBalance.toFixed(2)
+        };
+        tableObj.push(obj);
+        tableBeggingBalance = tableEndingBalance;
+        interestAmount = (this.r / 1200) * tableBeggingBalance;
+        tablePrinciple = tableEMI - interestAmount;
+        tableEndingBalance = tableBeggingBalance - tablePrinciple;
+      }
+      return tableObj;
   }
 
 

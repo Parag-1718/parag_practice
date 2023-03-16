@@ -5,11 +5,14 @@
     <div class="row">
     <div class="form_input col s6 pink-text">
         <h6>Principal loan amount</h6>
-        <input type="text" [(ngModel)]="p" placeholder="Principal loan amount" (keyup)="result()" (keydown)="result()">
+        <input type="range" [(ngModel)]="p" placeholder="Principal loan amount" (input)="result()" min="30000" max="5000000">
+        <p>{{p}}</p>
         <h6>Loan tenure in months</h6>
-        <input type="text" [(ngModel)]="n" placeholder="Loan tenure in months"  (keyup)="result()" (keydown)="result()">
+        <input type="range" [(ngModel)]="n" placeholder="Loan tenure in months" (input)="result()"  min="30" max="360">
+        <p>{{n}}</p>
         <h6>Monthly interest rate</h6>
-        <input type="text" [(ngModel)]="r" placeholder="Monthly interest rate"  (keyup)="result()" (keydown)="result()"z>
+        <input type="range" [(ngModel)]="r" placeholder="Monthly interest rate"  (input)="result()" min="8" max="16" step="0.05">
+        <p>{{r}}</p>
     </div>
     <div class="col s6">
         <div>
@@ -43,13 +46,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of tableObj">
+      <tr *ngFor="let item of tableData()">
         <td>{{item.index}}</td>
-        <td>{{item.bb}}</td>
-        <td>{{item.emi}}</td>
-        <td>{{item.pri}}</td>
-        <td>{{item.interest}}</td>
-        <td>{{item.end}}</td>
+        <td>{{item.one}}</td>
+        <td>{{item.two}}</td>
+        <td>{{item.three}}</td>
+        <td>{{item.four}}</td>
+        <td>{{item.five}}</td>
       </tr>
     </tbody>
   </table>
