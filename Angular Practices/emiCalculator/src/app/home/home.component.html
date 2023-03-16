@@ -1,0 +1,56 @@
+
+
+<div class="conatiner">
+    <h1 class="pink-text text-lighten-4">EMI Loan Calculator</h1>
+    <div class="row">
+    <div class="form_input col s6 pink-text">
+        <h6>Principal loan amount</h6>
+        <input type="text" [(ngModel)]="p" placeholder="Principal loan amount" (keyup)="result()" (keydown)="result()">
+        <h6>Loan tenure in months</h6>
+        <input type="text" [(ngModel)]="n" placeholder="Loan tenure in months"  (keyup)="result()" (keydown)="result()">
+        <h6>Monthly interest rate</h6>
+        <input type="text" [(ngModel)]="r" placeholder="Monthly interest rate"  (keyup)="result()" (keydown)="result()"z>
+    </div>
+    <div class="col s6">
+        <div>
+            <h6 class="purple-text">Monthly EMI</h6>
+            <p >{{resultAmount}}</p><hr>
+        </div>
+        <div>
+            <h6 class="purple-text">Total Interest</h6>
+            <p>{{IntersetAmount}}</p><hr>
+        </div>
+        <div>
+            <h6 class="purple-text">Payable Amount</h6>
+            <p>{{PayableAmount}}</p><hr>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- table  -->
+
+<div class="conatiner_table">
+<table border="1">
+    <thead>
+      <tr>
+          <th>Payment No.</th>
+          <th>Begining Balance</th>
+          <th>EMI</th>
+          <th>Principal</th>
+          <th>Interest</th>
+          <th>Ending Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of tableObj">
+        <td>{{item.index}}</td>
+        <td>{{item.bb}}</td>
+        <td>{{item.emi}}</td>
+        <td>{{item.pri}}</td>
+        <td>{{item.interest}}</td>
+        <td>{{item.end}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>       

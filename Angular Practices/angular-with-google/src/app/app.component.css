@@ -1,0 +1,18 @@
+.g-btn{
+    width: 200px;
+    border: 2px solid rgb(87, 87, 87);
+    display: flex;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px
+}
+span{
+    margin-left: 15px;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+}
+.navBar p {
+    margin-left: 10px;
+}

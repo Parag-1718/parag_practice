@@ -1,0 +1,28 @@
+
+
+<nav style="display: flex; justify-content: space-around;">
+  <ul>
+    <li><button (click)="log(loginbtn)">{{loginbtn}}</button></li>
+  </ul>
+</nav>
+
+<div class="g-btn" *ngIf="!user">
+<asl-google-signin-button  class="g-logo">
+</asl-google-signin-button>
+<span>Continue with google</span>
+</div>
+
+<!-- user login bar -->
+<nav class="navBar" *ngIf="user">
+  <div>
+    <img src="{{user.photoUrl}}" width="30px" height="30px" style="border-radius: 50%;">
+  </div>
+  <div>
+    <p>{{user.email}}</p>
+  </div>
+</nav>
+<div *ngIf="user">
+  <h1>Welcome {{user.name}}</h1>
+</div>
+
+<app-iplookup *ngIf="user"></app-iplookup>

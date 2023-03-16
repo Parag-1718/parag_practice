@@ -1,0 +1,10 @@
+<h2>artical works!</h2>
+
+<P>Article:-</P>
+
+<button (click)="submitbtn()">submit</button>
+<ul>
+    <li *ngFor="let t of result;index as i">
+      {{i+1}} - {{t.title}}
+    </li>
+</ul>

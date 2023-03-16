@@ -1,0 +1,23 @@
+
+<form class="container" [formGroup]="contact">
+    <h4> CONTACT US </h4>
+
+    <input type="text" [formControl]="name" placeholder="Enter name">
+    <p class="red-text" [hidden]="name.valid || name.untouched">Enter name</p>
+
+    <input type="email" [formControl]="email" placeholder="Enter email">
+    <p class="red-text" [hidden]="email.valid || email.untouched">Email must be valid and required</p>
+
+    <input type="tel" [formControl]="phone" placeholder="Enter phone no.">
+    <p class="red-text" [hidden]="phone.valid || phone.untouched">Phone no must be valid and required</p>
+
+   <textarea [formControl]="msg" cols="30" rows="10" placeholder="enter msg"></textarea>
+   <p class="red-text" [hidden]="name.valid || name.untouched">Enter message</p>
+
+    <button class="btn black" [disabled]="contact.invalid"
+    (click)="submitBtn()"
+    >submit</button>
+
+    <button class="btn red" style="margin-left: 20px;" 
+    (click)="resetBtn()">Reset</button>
+</form>

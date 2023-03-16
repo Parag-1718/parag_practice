@@ -1,0 +1,9 @@
+li a{
+    color:black
+}
+.active{
+    background-color: red;
+}
+body{
+    background-image: url("../assets/bg.jpg");
+}

@@ -1,0 +1,54 @@
+
+<div>
+    <div class="row text-center fs-3 mb-2 bg-light">
+        <h1>Registration Form</h1>
+    </div>
+    <form>
+        <div class="row mb-3">
+            <label class="form-label" for="name">Name : </label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="email">Email : </label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <div class="row mb-3">
+            <label class="form-label" for="phoneNo">Phone No : </label>
+            <input type="tel" class="form-control" name="phoneNo">
+        </div>
+        <div class="row mb-3">
+            <div class="mb-2">Gender : </div>
+            <div class="col form-check form-check-inline">
+                <input type="radio" name="gender" class="form-check-input" id="male">
+                <label for="gender" class="form-check-label">Male </label>
+            </div>
+            <div class="col form-check form-check-inline">
+                <input type="radio" name="gender" class="form-check-input" id="female">
+                <label for="gender" class="form-check-label">Female </label>
+            </div>
+        </div>
+        <div>
+            <label for="status">Status : </label>
+            <select name="status">
+                <option value="deafult"></option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+            </select>
+        </div>
+        <div class="row mb-3">
+            <label for="city" class="form-label">City : </label>
+            <input type="text" name="city" class="form-control">
+        </div>
+        <div class="row mb-3">
+            <label for="state" class="form-label">State : </label>
+            <input type="text" name="state" class="form-control">
+        </div>
+        <div class="form-check">
+            <label for="agreed" class="form-check-label">I agreed : </label>
+            <input type="checkbox" name="agreed" class="form-check-input">
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+</div>

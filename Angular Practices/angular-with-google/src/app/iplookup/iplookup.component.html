@@ -1,0 +1,28 @@
+
+<form>
+  <div>
+    <label for="ipInput">Enter Ip address:</label><br>
+    <input type="text" name="ipInput" [(ngModel)]="ipAddress" required> <br><br>
+    <button (click)="getIp()">Get Information</button>
+  </div>
+</form>
+
+<br><br>
+
+
+  <table *ngIf="ipInfo" border="1" cellspacing="0" cellpadding="10px">
+    <tr>
+      <th>IP Address</th>
+      <th>Country</th>
+      <th>Region</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    <tr>
+      <td>{{ ipInfo.ip }}</td>
+      <td>{{ ipInfo.country }}</td>
+      <td>{{ ipInfo.region }}</td>
+      <td>{{ ipInfo.latitude }}</td>
+      <td>{{ ipInfo.longitude }}</td>
+    </tr>
+  </table>
