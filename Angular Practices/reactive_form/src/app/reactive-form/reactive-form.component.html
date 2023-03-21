@@ -1,54 +1,28 @@
-
-<div>
-    <div class="row text-center fs-3 mb-2 bg-light">
-        <h1>Registration Form</h1>
+<div class="myform" [ngClass]="formStatus">
+<form [formGroup]="loginform" (ngSubmit)="onsubmit(loginform.value)">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+        <div class="text-danger-emphasis">
+            <p *ngIf="loginform.get('email').errors?.['required'] && loginform.get('email').touched">required</p>
+            <p *ngIf="loginform.get('email').errors?.['email'] && loginform.get('email').touched">invalid email
+            </p>
+        </div>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
-    <form>
-        <div class="row mb-3">
-            <label class="form-label" for="name">Name : </label>
-            <input type="text" class="form-control" name="name">
-        </div>
-        <div class="row mb-3">
-            <label class="form-label" for="email">Email : </label>
-            <input type="email" class="form-control" name="email">
-        </div>
-        <div class="row mb-3">
-            <label class="form-label" for="phoneNo">Phone No : </label>
-            <input type="tel" class="form-control" name="phoneNo">
-        </div>
-        <div class="row mb-3">
-            <div class="mb-2">Gender : </div>
-            <div class="col form-check form-check-inline">
-                <input type="radio" name="gender" class="form-check-input" id="male">
-                <label for="gender" class="form-check-label">Male </label>
-            </div>
-            <div class="col form-check form-check-inline">
-                <input type="radio" name="gender" class="form-check-input" id="female">
-                <label for="gender" class="form-check-label">Female </label>
-            </div>
-        </div>
-        <div>
-            <label for="status">Status : </label>
-            <select name="status">
-                <option value="deafult"></option>
-                <option value="single">Single</option>
-                <option value="married">Married</option>
-            </select>
-        </div>
-        <div class="row mb-3">
-            <label for="city" class="form-label">City : </label>
-            <input type="text" name="city" class="form-control">
-        </div>
-        <div class="row mb-3">
-            <label for="state" class="form-label">State : </label>
-            <input type="text" name="state" class="form-control">
-        </div>
-        <div class="form-check">
-            <label for="agreed" class="form-check-label">I agreed : </label>
-            <input type="checkbox" name="agreed" class="form-check-input">
-        </div>
-        <div>
-            <button>submit</button>
-        </div>
-    </form>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" formControlName="pass">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="check">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+
+    <div class="mb-3" formArrayName="skills" *ngFor="let item of loginform.get('skills')['controls'];index as i">
+        <input type="text" placeholder="add skills" class="form-control" formControlName="{{i}}">
+    </div>
+    <button class="btn btn-primary my-3" (click)="add()">+add skills</button> <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </div>

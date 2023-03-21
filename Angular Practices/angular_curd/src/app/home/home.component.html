@@ -1,0 +1,12 @@
+
+<h2 class="text-center text-capitalize">users</h2>
+
+<ul class="container">
+    <li *ngFor="let item of usersArr[0]" class="my-2">
+        id: {{item.id}} <br>
+        name: {{item.email}} <br>
+        email: {{item.password}} <br>
+        <button class="btn btn-danger me-2 my-2" (click)="onDelete(item)">delete</button>
+        <button class="btn  btn-warning me-2 my-2" (click)="onEdit(item)">edit</button>
+    </li>
+</ul>

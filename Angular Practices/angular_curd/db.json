@@ -1,0 +1,64 @@
+{
+  "user": [
+    {
+      "email": "priyanshu_tahi@123",
+      "password": "parag33",
+      "id": 1
+    },
+    {
+      "email": "parag@gmail.com",
+      "password": "1212",
+      "id": 2
+    },
+    {
+      "email": null,
+      "password": null,
+      "id": 3
+    },
+    {
+      "email": "meet@gmail.com",
+      "password": "6363",
+      "id": 4
+    },
+    {
+      "email": null,
+      "password": null,
+      "id": 5
+    },
+    {
+      "email": "priyanshsdsdsu@gmail.cpom",
+      "password": "333",
+      "id": 6
+    },
+    {
+      "email": "p@gmail.cpom",
+      "password": "333",
+      "id": 7
+    },
+    {
+      "email": "dutt665@gmail.com",
+      "password": "1414",
+      "id": 8
+    },
+    {
+      "email": "dutt2561@gmail.com",
+      "password": "1414",
+      "id": 9
+    },
+    {
+      "email": "dutwfawft@gmail.com",
+      "password": "1414",
+      "id": 10
+    },
+    {
+      "email": "ghdhfs@g",
+      "password": "sdaaefef",
+      "id": 11
+    },
+    {
+      "email": "virat34@gmail.com",
+      "password": "2323",
+      "id": 12
+    }
+  ]
+}

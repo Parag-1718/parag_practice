@@ -9,13 +9,16 @@ import { DepartmentsComponent } from './departments/departments.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DepartmentsDetailsComponent } from './departments-details/departments-details.component';
+import { NotificationBarComponent } from './notification-bar/notification-bar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
    routingComponents,
    PageNotFoundComponent,
-   DepartmentsDetailsComponent
+   DepartmentsDetailsComponent,
+   NotificationBarComponent
   ],
   imports: [
     BrowserModule,

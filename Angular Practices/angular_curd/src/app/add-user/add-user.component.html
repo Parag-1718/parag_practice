@@ -1,0 +1,17 @@
+
+<form class="container my-5" [formGroup]="userForm" (ngSubmit)="addUser(userForm.value)">
+
+    <h1 class="text-center text-capitalize">{{btnMode ? 'Add user' : 'update user'}}</h1>
+
+    <div class="form-floating mb-3">
+        <input type="email" id="email"  formControlName="email" class="form-control" placeholder="Enter email">
+        <label for="email">Enter email</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="password" id="pass" formControlName="password" class="form-control" placeholder="******">
+        <label for="pass">******</label>
+    </div>
+
+    <button class="btn btn-dark" [disabled]="userForm.invalid">{{btnMode ? 'add' : 'update'}}</button>
+</form>

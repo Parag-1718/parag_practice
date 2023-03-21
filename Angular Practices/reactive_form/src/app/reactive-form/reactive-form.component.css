@@ -1,3 +1,17 @@
 form{
     width: 420px;
 }
+
+input.ng-touched.ng-invalid{
+    border: 2px solid red;
+}
+
+.myform.INVALID{
+    border: 1px solid red;
+}
+.myform.PENDING{
+    border: 1px solid yellow;
+}
+.myform.VALID{
+    border: 1px solid green;
+}
